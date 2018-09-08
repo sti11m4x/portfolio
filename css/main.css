@@ -1,18 +1,48 @@
 body {
+  position: relative;
   margin: 0;
   padding: 0;
   line-height: 1.75;
   font-family: "Arial", sans-serif;
   font-size: 16px;
-  background-color: #ccc;
-  color: #000;
+  background-color: #52489c;
+  color: #ebebeb;
 }
 
 .container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  padding: 0 8%;
+}
+
+header {
+  height: 100vh;
+}
+
+header .header-top {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 400px;
+  background-color: #59c3c3;
+}
+
+header .header-top img.logo {
+  width: 100px;
+  height: 80px;
+  background-color: #4062bb;
+}
+
+header .header-top .header-title h1 {
+  font-size: 24px;
+  color: #4062bb;
+}
+
+header .header-top .header-title h2 {
+  font-size: 18px;
 }
 
 .button {
